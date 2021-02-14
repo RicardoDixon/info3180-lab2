@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block main %}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<div class="profile">
+    <div class="profileTop">
+        <img class ="photo" src="{{url_for('static', filename='pic.jpg')}}" alt="profile photo">
+            <h1>Ricardo Dixon</h1>
+            <h5>@rdixon</h5>
+            <h5>Kingston, Jamaica</h5>
+            <h5>{{date_joined}}</h5>
+    </div>
+    <div class="profileContent">
+        <p>
+            I am hard working and dedicated to the goals I have in life. I am determine to be the best person
+            I can be and will not stop working hard no matter how hard it maybe,
+            because I know that one day it shall be done.
+            I love working with people, just to share know and to stregthen each other on our path to success.
+        </p>
+        <ul class="layout">
+            <li>
+                <span class="num">7</span>
+                <span>Posts</span>
+            </li>
+            <li>
+                <span class="num">100</span>
+                <span>Following</span>
+            </li>
+            <li>
+                <span class="num">250</span>
+                <span>Followers</span>
+            </li>
+        </ul>
+        <div class="btn2"><button class="btn">Follow</button></div>
+        
+    </div>
+</div>
+{% endblock %}
